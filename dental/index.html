@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жемчуг — стоматологическая клиника</title>
+    <meta name="description" content="Стоматологическая клиника «Жемчуг»: лечение, имплантация, протезирование, ортодонтия и профессиональная гигиена. Запись онлайн.">
+    <link rel="icon" href="img/tooth.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="top">
+    <div class="topbar">
+        <div class="container topbar__inner">
+            <span>📍 г. Москва, ул. Садовая, 12</span>
+            <span>🕘 Пн–Сб 9:00–21:00, Вс 10:00–18:00</span>
+        </div>
+    </div>
+    <div class="container header__inner">
+        <a class="logo" href="#top" aria-label="Жемчуг — на главную">
+            <img src="img/tooth.svg" alt="" width="40" height="40">
+            <span class="logo__text">Жемчуг<small>стоматология</small></span>
+        </a>
+
+        <nav class="nav" id="nav" aria-label="Основное меню">
+            <a href="#services">Услуги</a>
+            <a href="#prices">Цены</a>
+            <a href="#doctors">Врачи</a>
+            <a href="#reviews">Отзывы</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+
+        <div class="header__actions">
+            <a class="header__phone" href="tel:+74950000000">+7 (495) 000-00-00</a>
+            <a class="btn btn--primary btn--sm" href="#booking">Записаться</a>
+        </div>
+
+        <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+    <div class="container hero__inner">
+        <div class="hero__content">
+            <span class="badge">Лицензия № ЛО-77-01-000000</span>
+            <h1>Здоровая улыбка <span class="accent">без боли и страха</span></h1>
+            <p class="hero__lead">Лечим, восстанавливаем и выпрямляем зубы на современном оборудовании. Бережно, с понятным планом лечения и фиксированной ценой.</p>
+            <div class="hero__buttons">
+                <a class="btn btn--primary" href="#booking">Записаться на приём</a>
+                <a class="btn btn--ghost" href="#prices">Смотреть цены</a>
+            </div>
+            <ul class="hero__stats">
+                <li><b>15</b> лет работы</li>
+                <li><b>12 000+</b> пациентов</li>
+                <li><b>4.9 ★</b> средняя оценка</li>
+            </ul>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+            <div class="hero__circle">
+                <svg viewBox="0 0 200 200" class="hero__tooth">
+                    <defs>
+                        <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0" stop-color="#ffffff"/>
+                            <stop offset="1" stop-color="#dff6f4"/>
+                        </linearGradient>
+                    </defs>
+                    <path d="M62 20c-25 0-44 19-44 47 0 22 9 34 16 50 6 19 6 66 25 66 16 0 16-44 41-44s25 44 41 44c19 0 19-47 25-66 7-16 16-28 16-50 0-28-19-47-44-47-16 0-25 9-38 9s-22-9-38-9z" fill="url(#g1)" stroke="#0e7c86" stroke-width="6" stroke-linejoin="round"/>
+                    <path d="M55 55c6-9 16-12 25-9" stroke="#5fd0c8" stroke-width="8" stroke-linecap="round" fill="none"/>
+                </svg>
+            </div>
+            <div class="float-card float-card--1">
+                <span class="float-card__icon">🛡️</span>
+                <div><b>Гарантия</b><small>до 10 лет на импланты</small></div>
+            </div>
+            <div class="float-card float-card--2">
+                <span class="float-card__icon">💤</span>
+                <div><b>Лечение во сне</b><small>седация и наркоз</small></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ ADVANTAGES ============ -->
+<section class="section advantages">
+    <div class="container">
+        <ul class="adv-grid">
+            <li class="adv">
+                <div class="adv__icon">🦷</div>
+                <h3>Без боли</h3>
+                <p>Современная компьютерная анестезия — укол вы не почувствуете.</p>
+            </li>
+            <li class="adv">
+                <div class="adv__icon">🔬</div>
+                <h3>Точная диагностика</h3>
+                <p>3D-томограф и микроскоп прямо в клинике — без поездок по городу.</p>
+            </li>
+            <li class="adv">
+                <div class="adv__icon">📋</div>
+                <h3>Честная цена</h3>
+                <p>Фиксируем стоимость в плане лечения. Никаких доплат «по ходу».</p>
+            </li>
+            <li class="adv">
+                <div class="adv__icon">👶</div>
+                <h3>Детский приём</h3>
+                <p>Отдельный кабинет и врачи, которые умеют подружиться с ребёнком.</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section services" id="services">
+    <div class="container">
+        <div class="section__head">
+            <span class="eyebrow">Что мы делаем</span>
+            <h2>Услуги клиники</h2>
+            <p>Полный цикл стоматологической помощи — от профилактики до сложной имплантации.</p>
+        </div>
+
+        <div class="services-grid">
+            <article class="service">
+                <div class="service__icon">✨</div>
+                <h3>Гигиена и отбеливание</h3>
+                <p>Ультразвуковая чистка, Air Flow, фторирование, отбеливание ZOOM.</p>
+                <a href="#booking" class="service__link">Записаться →</a>
+            </article>
+            <article class="service">
+                <div class="service__icon">🩺</div>
+                <h3>Лечение зубов</h3>
+                <p>Кариес, пульпит, лечение каналов под микроскопом, художественная реставрация.</p>
+                <a href="#booking" class="service__link">Записаться →</a>
+            </article>
+            <article class="service">
+                <div class="service__icon">🔩</div>
+                <h3>Имплантация</h3>
+                <p>Импланты Straumann, Nobel, Osstem. Одномоментная имплантация и All-on-4.</p>
+                <a href="#booking" class="service__link">Записаться →</a>
+            </article>
+            <article class="service">
+                <div class="service__icon">👑</div>
+                <h3>Протезирование</h3>
+                <p>Коронки из циркония и E.max, виниры, съёмные и бюгельные протезы.</p>
+                <a href="#booking" class="service__link">Записаться →</a>
+            </article>
+            <article class="service">
+                <div class="service__icon">😁</div>
+                <h3>Ортодонтия</h3>
+                <p>Брекеты и элайнеры для взрослых и детей. Исправим прикус без лишних визитов.</p>
+                <a href="#booking" class="service__link">Записаться →</a>
+            </article>
+            <article class="service">
+                <div class="service__icon">🧸</div>
+                <h3>Детская стоматология</h3>
+                <p>Лечение молочных зубов, герметизация фиссур, адаптационные визиты.</p>
+                <a href="#booking" class="service__link">Записаться →</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ============ PRICES ============ -->
+<section class="section prices" id="prices">
+    <div class="container">
+        <div class="section__head">
+            <span class="eyebrow">Прайс-лист</span>
+            <h2>Цены на услуги</h2>
+            <p>Окончательная стоимость определяется после консультации и фиксируется в договоре.</p>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Категории цен">
+            <button class="tab is-active" role="tab" aria-selected="true" data-tab="therapy">Терапия</button>
+            <button class="tab" role="tab" aria-selected="false" data-tab="hygiene">Гигиена</button>
+            <button class="tab" role="tab" aria-selected="false" data-tab="implant">Имплантация</button>
+            <button class="tab" role="tab" aria-selected="false" data-tab="ortho">Ортодонтия</button>
+        </div>
+
+        <div class="price-panel is-active" data-panel="therapy" role="tabpanel">
+            <ul class="price-list">
+                <li><span>Консультация и план лечения</span><b>бесплатно</b></li>
+                <li><span>Лечение поверхностного кариеса</span><b>от 3 500 ₽</b></li>
+                <li><span>Лечение глубокого кариеса</span><b>от 5 200 ₽</b></li>
+                <li><span>Лечение пульпита (1 канал)</span><b>от 7 800 ₽</b></li>
+                <li><span>Художественная реставрация</span><b>от 8 500 ₽</b></li>
+                <li><span>Компьютерная анестезия</span><b>900 ₽</b></li>
+            </ul>
+        </div>
+        <div class="price-panel" data-panel="hygiene" role="tabpanel" hidden>
+            <ul class="price-list">
+                <li><span>Профессиональная гигиена (комплекс)</span><b>6 500 ₽</b></li>
+                <li><span>Air Flow</span><b>3 200 ₽</b></li>
+                <li><span>Фторирование</span><b>1 500 ₽</b></li>
+                <li><span>Отбеливание ZOOM 4</span><b>24 000 ₽</b></li>
+                <li><span>Домашнее отбеливание (капы + гель)</span><b>15 000 ₽</b></li>
+            </ul>
+        </div>
+        <div class="price-panel" data-panel="implant" role="tabpanel" hidden>
+            <ul class="price-list">
+                <li><span>Имплант Osstem (Корея)</span><b>от 32 000 ₽</b></li>
+                <li><span>Имплант Straumann (Швейцария)</span><b>от 58 000 ₽</b></li>
+                <li><span>Синус-лифтинг</span><b>от 35 000 ₽</b></li>
+                <li><span>All-on-4 под ключ</span><b>от 290 000 ₽</b></li>
+                <li><span>Коронка из циркония</span><b>от 26 000 ₽</b></li>
+            </ul>
+        </div>
+        <div class="price-panel" data-panel="ortho" role="tabpanel" hidden>
+            <ul class="price-list">
+                <li><span>Консультация ортодонта + 3D-модель</span><b>2 500 ₽</b></li>
+                <li><span>Металлические брекеты (1 челюсть)</span><b>от 45 000 ₽</b></li>
+                <li><span>Керамические брекеты (1 челюсть)</span><b>от 65 000 ₽</b></li>
+                <li><span>Элайнеры (полный курс)</span><b>от 180 000 ₽</b></li>
+                <li><span>Ретейнер</span><b>от 8 000 ₽</b></li>
+            </ul>
+        </div>
+
+        <div class="promo">
+            <div>
+                <b>Рассрочка 0% до 12 месяцев</b>
+                <p>Начните лечение сейчас — платите частями без переплат.</p>
+            </div>
+            <a href="#booking" class="btn btn--light">Узнать подробнее</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============ DOCTORS ============ -->
+<section class="section doctors" id="doctors">
+    <div class="container">
+        <div class="section__head">
+            <span class="eyebrow">Команда</span>
+            <h2>Наши врачи</h2>
+            <p>Регулярно проходим обучение в России и за рубежом.</p>
+        </div>
+
+        <div class="doctors-grid">
+            <article class="doctor">
+                <div class="doctor__photo" style="--c1:#b8ece6;--c2:#0e7c86">АС</div>
+                <h3>Анна Смирнова</h3>
+                <p class="doctor__role">Главный врач, стоматолог-терапевт</p>
+                <p class="doctor__exp">Стаж 18 лет</p>
+            </article>
+            <article class="doctor">
+                <div class="doctor__photo" style="--c1:#ffe1c7;--c2:#e07a2e">ИП</div>
+                <h3>Игорь Петров</h3>
+                <p class="doctor__role">Хирург-имплантолог</p>
+                <p class="doctor__exp">Стаж 14 лет</p>
+            </article>
+            <article class="doctor">
+                <div class="doctor__photo" style="--c1:#dcd6ff;--c2:#5b4bd1">ЕК</div>
+                <h3>Елена Кузнецова</h3>
+                <p class="doctor__role">Ортодонт</p>
+                <p class="doctor__exp">Стаж 11 лет</p>
+            </article>
+            <article class="doctor">
+                <div class="doctor__photo" style="--c1:#ffd6e3;--c2:#c93f6b">МВ</div>
+                <h3>Мария Волкова</h3>
+                <p class="doctor__role">Детский стоматолог</p>
+                <p class="doctor__exp">Стаж 9 лет</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="section reviews" id="reviews">
+    <div class="container">
+        <div class="section__head">
+            <span class="eyebrow">Отзывы</span>
+            <h2>Что говорят пациенты</h2>
+        </div>
+
+        <div class="slider">
+            <button class="slider__btn slider__btn--prev" aria-label="Предыдущий отзыв">‹</button>
+            <div class="slider__track" id="sliderTrack">
+                <blockquote class="review is-active">
+                    <div class="review__stars">★★★★★</div>
+                    <p>«Боялась стоматологов с детства. Здесь впервые лечила зуб и вообще ничего не почувствовала. Анна Сергеевна — золото!»</p>
+                    <cite>Ольга, 34 года</cite>
+                </blockquote>
+                <blockquote class="review">
+                    <div class="review__stars">★★★★★</div>
+                    <p>«Поставили два импланта, всё прошло быстро и аккуратно. Цена в итоге совпала с планом до рубля.»</p>
+                    <cite>Сергей, 52 года</cite>
+                </blockquote>
+                <blockquote class="review">
+                    <div class="review__stars">★★★★★</div>
+                    <p>«Сын теперь сам просится к Марии Викторовне. Лучший показатель для детского врача.»</p>
+                    <cite>Наталья, мама Миши (6 лет)</cite>
+                </blockquote>
+            </div>
+            <button class="slider__btn slider__btn--next" aria-label="Следующий отзыв">›</button>
+            <div class="slider__dots" id="sliderDots"></div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section faq">
+    <div class="container container--narrow">
+        <div class="section__head">
+            <span class="eyebrow">FAQ</span>
+            <h2>Частые вопросы</h2>
+        </div>
+        <details class="faq__item" open>
+            <summary>Больно ли лечить зубы?</summary>
+            <p>Нет. Мы используем компьютерную анестезию и современные препараты. Для тревожных пациентов доступно лечение под седацией.</p>
+        </details>
+        <details class="faq__item">
+            <summary>Сколько стоит первичная консультация?</summary>
+            <p>Консультация терапевта с составлением плана лечения — бесплатно. Консультация ортодонта с 3D-моделированием — 2 500 ₽.</p>
+        </details>
+        <details class="faq__item">
+            <summary>Можно ли получить налоговый вычет?</summary>
+            <p>Да. Мы подготовим справку для налоговой и копию лицензии — вы сможете вернуть 13% стоимости лечения.</p>
+        </details>
+        <details class="faq__item">
+            <summary>Принимаете ли вы по ДМС?</summary>
+            <p>Да, мы работаем с основными страховыми компаниями. Уточните наличие вашей компании у администратора.</p>
+        </details>
+    </div>
+</section>
+
+<!-- ============ BOOKING ============ -->
+<section class="section booking" id="booking">
+    <div class="container booking__inner">
+        <div class="booking__text">
+            <span class="eyebrow eyebrow--light">Онлайн-запись</span>
+            <h2>Запишитесь на бесплатную консультацию</h2>
+            <p>Оставьте заявку — администратор перезвонит в течение 15 минут и подберёт удобное время.</p>
+            <ul class="booking__perks">
+                <li>✓ Осмотр и план лечения бесплатно</li>
+                <li>✓ Без очередей и ожидания</li>
+                <li>✓ Напомним о визите за день</li>
+            </ul>
+        </div>
+
+        <form class="form" id="bookingForm" novalidate>
+            <div class="form__row">
+                <label for="name">Ваше имя</label>
+                <input id="name" name="name" type="text" placeholder="Иван" autocomplete="name" required>
+                <span class="form__error"></span>
+            </div>
+            <div class="form__row">
+                <label for="phone">Телефон</label>
+                <input id="phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" autocomplete="tel" required>
+                <span class="form__error"></span>
+            </div>
+            <div class="form__row">
+                <label for="service">Услуга</label>
+                <select id="service" name="service">
+                    <option>Консультация</option>
+                    <option>Лечение зубов</option>
+                    <option>Гигиена и отбеливание</option>
+                    <option>Имплантация</option>
+                    <option>Протезирование</option>
+                    <option>Ортодонтия</option>
+                    <option>Детская стоматология</option>
+                </select>
+            </div>
+            <div class="form__row">
+                <label for="date">Желаемая дата</label>
+                <input id="date" name="date" type="date">
+            </div>
+            <label class="form__check">
+                <input type="checkbox" id="agree" required>
+                <span>Согласен на обработку персональных данных</span>
+            </label>
+            <button class="btn btn--primary btn--block" type="submit">Отправить заявку</button>
+            <p class="form__success" id="formSuccess" hidden>Спасибо! Мы перезвоним вам в ближайшее время.</p>
+        </form>
+    </div>
+</section>
+
+<!-- ============ CONTACTS ============ -->
+<section class="section contacts" id="contacts">
+    <div class="container contacts__inner">
+        <div class="contacts__info">
+            <span class="eyebrow">Контакты</span>
+            <h2>Как нас найти</h2>
+            <ul class="contacts__list">
+                <li><span>Адрес</span>г. Москва, ул. Садовая, 12<br>5 минут от м. «Садовая»</li>
+                <li><span>Телефон</span><a href="tel:+74950000000">+7 (495) 000-00-00</a></li>
+                <li><span>Email</span><a href="mailto:info@zhemchug-dent.ru">info@zhemchug-dent.ru</a></li>
+                <li><span>Режим работы</span>Пн–Сб: 9:00–21:00<br>Вс: 10:00–18:00</li>
+            </ul>
+        </div>
+        <div class="contacts__map" aria-label="Схема проезда">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+                <rect width="400" height="300" fill="#e8f3f2"/>
+                <path d="M0 90 H400 M0 210 H400 M120 0 V300 M290 0 V300" stroke="#fff" stroke-width="18"/>
+                <path d="M0 150 C120 140 200 170 400 130" stroke="#cfe6e3" stroke-width="10" fill="none"/>
+                <rect x="140" y="110" width="60" height="40" rx="6" fill="#d5ebe8"/>
+                <rect x="215" y="225" width="60" height="50" rx="6" fill="#d5ebe8"/>
+                <rect x="20" y="20" width="80" height="55" rx="6" fill="#d5ebe8"/>
+                <rect x="310" y="20" width="70" height="55" rx="6" fill="#d5ebe8"/>
+                <g transform="translate(205 150)">
+                    <circle r="26" fill="#0e7c86" opacity=".18"/>
+                    <path d="M0-34c-12 0-21 9-21 21 0 16 21 33 21 33s21-17 21-33c0-12-9-21-21-21z" fill="#0e7c86"/>
+                    <circle cy="-13" r="8" fill="#fff"/>
+                </g>
+            </svg>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+    <div class="container footer__inner">
+        <a class="logo logo--light" href="#top">
+            <img src="img/tooth.svg" alt="" width="36" height="36">
+            <span class="logo__text">Жемчуг<small>стоматология</small></span>
+        </a>
+        <p class="footer__note">Имеются противопоказания. Необходима консультация специалиста.</p>
+        <p class="footer__copy">© <span id="year">2026</span> Клиника «Жемчуг». Все права защищены.</p>
+    </div>
+</footer>
+
+<a href="#top" class="to-top" id="toTop" aria-label="Наверх">↑</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
